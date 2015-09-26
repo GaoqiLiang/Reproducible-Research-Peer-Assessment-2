@@ -7,7 +7,7 @@
 # which types of events have the greatest economic consequences.
 
 # Data Processing
-setwd("C:/Users/c3179782/Desktop/R/Coursera/Lecture5_project2")
+setwd("C:/Users/Desktop/R/Coursera/Lecture5_project2")
 
 library(plyr)
 library(dplyr)
@@ -32,7 +32,7 @@ dim(stormData)
 names(stormData)
 head(stormData)
 
-# list the stormData by year from 1950 to 2010
+# list the stormData by year from 1980 to 2010
 if (dim(stormData)[2] == 37) {
   stormData$year <- as.numeric(format(as.Date(stormData$BGN_DATE, format = "%m/%d/%Y %H:%M:%S"), "%Y"))
 }

@@ -1,8 +1,7 @@
 ---
 title: 'Reproducible Research: Peer Assessment 2'
-author: "Gaoqi Liang"
 date: "26 September 2015"
-output: pdf_document
+output: html_document
 ---
 # Impact of Severe Weather Events on Public Health and Economy in the United States
 ## Synopsis
@@ -40,7 +39,7 @@ head(stormData)
 
 ```
 
-List the stormData by year from 1950 to 2010
+List the stormData by year from 1980 to 2010
 ```{r, echo=TRUE}
 if (dim(stormData)[2] == 37) {
   stormData$year <- as.numeric(format(as.Date(stormData$BGN_DATE, format = "%m/%d/%Y %H:%M:%S"), "%Y"))
